@@ -10,6 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <title>ShopZen — Modern E-commerce</title>
+    <script>
+      // SPA fallback: GitHub Pages serves this 404.html for any unknown route.
+      // Redirect to the root so React Router can pick up the original path.
+      (function () {
+        var path = window.location.pathname;
+        // Strip the repo base (/React-App/) so React Router sees the in-app path
+        var base = '/React-App';
+        if (path.indexOf(base) === 0) path = path.slice(base.length);
+        if (!path || path === '/') path = '/';
+        window.location.replace(base + '/' + (path.charAt(0) === '/' ? path.slice(1) : path));
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
