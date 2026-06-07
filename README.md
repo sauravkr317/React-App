@@ -1,5 +1,10 @@
 # ShopZen — Advanced Responsive E-commerce (React + Vite + Tailwind)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![React](https://img.shields.io/badge/React-18-61dafb.svg)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-5-646cff.svg)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8.svg)](https://tailwindcss.com)
+
 A modern, fully responsive e-commerce web app built with **React 18**, **Vite**, **Tailwind CSS**, and **React Router**. Designed mobile-first with a clean, component-driven architecture.
 
 ## ✨ Features
