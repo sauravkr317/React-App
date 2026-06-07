@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply font-sans bg-slate-50 text-slate-800 antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+  *:focus-visible {
+    @apply outline-none ring-2 ring-brand-500 ring-offset-2 ring-offset-white rounded;
+  }
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { @apply bg-slate-100; }
+  ::-webkit-scrollbar-thumb { @apply bg-slate-300 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-slate-400; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:bg-brand-700 shadow-sm hover:shadow-md;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 hover:border-slate-300;
+  }
+  .btn-ghost {
+    @apply btn text-slate-600 hover:bg-slate-100;
+  }
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold;
+  }
+  .input {
+    @apply w-full px-4 py-2.5 rounded-lg border border-slate-200 bg-white text-sm placeholder-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-soft border border-slate-100 overflow-hidden;
+  }
+  .chip {
+    @apply px-3 py-1.5 rounded-full text-sm font-medium cursor-pointer transition-all duration-200 border;
+  }
+  .chip-off {
+    @apply chip bg-white text-slate-600 border-slate-200 hover:border-brand-400 hover:text-brand-600;
+  }
+  .chip-on {
+    @apply chip bg-brand-600 text-white border-brand-600 shadow-sm;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .text-balance { text-wrap: balance; }
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border-b border-white/40;
+  }
+}

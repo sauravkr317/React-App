@@ -1,0 +1,21 @@
+// Local fallback data used if the Fake Store API is unreachable.
+// Keeps the app fully functional offline / in restricted networks.
+
+export const FALLBACK_CATEGORIES = [
+  'all', 'electronics', 'jewelery', "men's clothing", "women's clothing"
+]
+
+export const FALLBACK_PRODUCTS = [
+  { id: 101, title: 'Wireless Noise-Cancelling Headphones', price: 199.99, description: 'Premium over-ear headphones with active noise cancellation, 30-hour battery, and crystal-clear sound.', category: 'electronics', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80', rating: { rate: 4.7, count: 248 } },
+  { id: 102, title: 'Smart Fitness Watch',                    price: 149.00, description: 'Track your heart rate, sleep, workouts and more with this sleek waterproof smartwatch.',              category: 'electronics', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80', rating: { rate: 4.5, count: 192 } },
+  { id: 103, title: 'Gold Plated Pendant Necklace',           price: 89.50,  description: 'Elegant 18k gold-plated pendant, perfect gift for special occasions.',                                  category: 'jewelery',    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80', rating: { rate: 4.6, count: 87  } },
+  { id: 104, title: "Men's Classic Cotton T-Shirt",          price: 24.99,  description: 'Soft, breathable 100% cotton tee available in multiple colors. A wardrobe staple.',                   category: "men's clothing", image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80', rating: { rate: 4.3, count: 312 } },
+  { id: 105, title: "Women's Floral Summer Dress",           price: 59.00,  description: 'Light, flowy floral dress, perfect for sunny days. Made with sustainable fabrics.',                   category: "women's clothing", image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&q=80', rating: { rate: 4.8, count: 156 } },
+  { id: 106, title: '4K Mirrorless Camera',                  price: 899.00, description: 'Capture stunning photos and 4K video with this compact mirrorless camera.',                            category: 'electronics', image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&q=80', rating: { rate: 4.9, count: 74  } },
+  { id: 107, title: 'Sterling Silver Hoop Earrings',         price: 39.00,  description: 'Minimalist sterling silver hoops — comfortable enough for all-day wear.',                             category: 'jewelery',    image: 'https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=600&q=80', rating: { rate: 4.4, count: 102 } },
+  { id: 108, title: "Men's Slim Fit Denim Jacket",           price: 79.00,  description: 'Classic denim jacket with a modern slim fit. Pairs well with anything.',                              category: "men's clothing", image: 'https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=600&q=80', rating: { rate: 4.5, count: 91  } },
+  { id: 109, title: "Women's Leather Crossbody Bag",         price: 119.00, description: 'Genuine leather crossbody bag with adjustable strap and multiple compartments.',                      category: "women's clothing", image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80', rating: { rate: 4.7, count: 64  } },
+  { id: 110, title: 'Portable Bluetooth Speaker',            price: 69.99,  description: 'Powerful 360° sound, waterproof design, 12 hours of playtime. Take it anywhere.',                     category: 'electronics', image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80', rating: { rate: 4.6, count: 218 } },
+  { id: 111, title: 'Diamond Engagement Ring',               price: 1499.0, description: 'A timeless 1-carat diamond ring set in 18k white gold. The perfect proposal.',                        category: 'jewelery',    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80', rating: { rate: 4.9, count: 38  } },
+  { id: 112, title: "Men's Running Sneakers",                price: 95.00,  description: 'Lightweight breathable running shoes with responsive cushioning.',                                    category: "men's clothing", image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80', rating: { rate: 4.4, count: 145 } }
+]
